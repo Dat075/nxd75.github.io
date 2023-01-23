@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY NEW YEAR</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./backend.css">
+  </head>
+<body>
+<div>
+  <div style="position:absolute; left:700px; top:45px;">
+    <img src="/HTML/picture/2.jpg" alt="cường café" width="480" height="960" >
+ </div>
+      <audio controls="" autoplay="">
+       <source src="/HTML/nhac/abba.mp3" type="audio/mpeg">     
+    </audio>
+</div> 
+</body>
+<script src="/HTML/phaohoa.js"></script>
+<script type="text/javascript">
+var bgBegin = 22;
+var bgEnd = 31;
+var bgTetId = 31;
+var bgTetUrl = '/banner/';
+document.body.style.backgroundImage = 'url(' + bgTetUrl + bgTetId + '.jpg)';
+document.body.style.backgroundAttachment = 'fixed';
+document.body.style.backgroundSize = 'cover';
+setInterval(function(){
+	if (bgTetId == bgEnd) bgTetId = bgBegin;
+	document.body.style.backgroundImage = 'url(' + bgTetUrl + bgTetId + '.jpg)';
+	document.body.style.backgroundAttachment = 'fixed';
+	document.body.style.backgroundSize = 'cover';
+	bgTetId++;
+}, 15000);
+</script>
